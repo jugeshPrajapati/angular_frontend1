@@ -1,0 +1,9 @@
+<p>users works!</p>
+<br/>
+<input type = "text" [(ngModel)] = "name" />
+<p> hello {{name}}</p>
+<ul>
+    <app-dynamic-list (itemVal) = "itemClicked1($event)" *ngFor="let item of items; let i =index" [item] = "item"> 
+        <span>{{i+1}}:</span>
+    </app-dynamic-list>
+</ul>
