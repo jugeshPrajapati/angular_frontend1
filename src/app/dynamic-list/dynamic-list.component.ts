@@ -17,4 +17,5 @@ export class DynamicListComponent {
     this.itemVal.emit(listItem);
 
   }
+ 
 }
